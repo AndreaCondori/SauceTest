@@ -5,20 +5,20 @@ siguiendo la arquitectura Page Object Model (POM). Las pruebas están diseñadas
 cubriendo el proceso de autenticación, compra y validación del carrito de compras.
 
 
-Requisitos
+Requisitos:
 Tener instalado lo siguiente:
 Java 11+
 Maven
 
-Instalación y Configuración
+Instalación y Configuración:
 Clonar repositorio
 Instalación de dependencias
 mvn clean install
 
-Ejecución de pruebas
+Ejecución de pruebas: 
 mvn test
 
-Estructura del Proyecto
+Estructura del Proyecto: 
 SauceTest/
 │── core/               # Configuración del Driver (Playwright)
 │── page/               # Clases POM para las páginas
