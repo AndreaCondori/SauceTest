@@ -1,4 +1,5 @@
 Descripción:
+
 Este proyecto implementa pruebas automatizadas utilizando Playwright, Cucumber y JUnit,
 siguiendo la arquitectura Page Object Model (POM). Las pruebas están diseñadas para la aplicación Sauce Demo,
 cubriendo el proceso de autenticación, compra y validación del carrito de compras.
