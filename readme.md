@@ -55,5 +55,7 @@ public class RunnerTest {
 }
 
 Generación de Reportes
+![{E329AC9F-0846-4D79-B11D-4E4D1617EB81}](https://github.com/user-attachments/assets/7335bc0e-9577-41d7-8acb-04801eea0c76)
+
 
 Las pruebas generan un reporte HTML en la carpeta target/cucumber/cucumber-report.html. Para visualizarlo, abre el archivo en tu navegador:
