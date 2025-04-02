@@ -8,11 +8,9 @@ import java.util.List;
 
 public class CheckoutResumenPage {
     private final Page page;
-    private final String itemtotal = ".summary_tax_label";
     private final String btnFinzalizar = "[data-test='finish']";
     private final String itemProductResumen = ".cart_item";
     private final String btnContinueCheckout = "#continue";
-    private final String itemPriceSelector = ".inventory_item_price";
     private final String mensajeConfirmacion="[data-test='complete-header']";
 
     public   CheckoutResumenPage(Page page){

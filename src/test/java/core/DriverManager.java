@@ -25,7 +25,6 @@ public class DriverManager {
         page = context.newPage();
         page.context().clearCookies();
         page.context().clearPermissions();
-       // page.context().storageState(new Page.StorageStateOptions().setPath(null));
     }
 
     @Before(order = 1)

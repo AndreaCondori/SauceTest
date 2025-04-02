@@ -40,37 +40,14 @@ public class CheckoutStepDefinitions {
         checkoutSteps.validarResumenCompra(productosEsperados);
     }
 
-//    @Then("debería ver los datos de envío:")
-//    public void deberiaVerLosDatosDeEnvio(DataTable datosEnvioEsperados) {
-//        checkoutSteps.validarDatosEnvio(datosEnvioEsperados);
-//    }
-//
-//    @When("intento completar el formulario con {string} {string} {string}")
-//    public void intentoCompletarElFormularioCon(String nombre, String apellido, String postal) {
-//        checkoutSteps.completarFormulario(nombre, apellido, postal);
-//    }
-//
-//    @Then("debería ver el mensaje de error {string}")
-//    public void deberiaVerElMensajeDeError(String mensajeError) {
-//        checkoutSteps.validarMensajeError(mensajeError);
-//    }
-//
-//    @Given("que estoy en la pantalla de resumen de compra")
-//    public void queEstoyEnLaPantallaDeResumenDeCompra() {
-//        checkoutSteps.validarPantallaResumen();
-//    }
-
     @When("confirmo la orden")
     public void confirmoLaOrden() {
         checkoutSteps.confirmarOrden();
-
     }
-
     @Then("debería ver el mensaje de confirmación {string}")
     public void deberiaVerElMensajeDeConfirmacion(String mensaje) {
         checkoutSteps.validarConfirmaciondeCompra(mensaje);
     }
-
 
     @Given("que he agregado los siguientes productos al carrito:")
     public void queHeAgregadoLosSiguientesProductosAlCarrito(DataTable dataTable) {
@@ -101,6 +78,5 @@ public class CheckoutStepDefinitions {
     @And("entro al formulario de pago")
     public void entroAlFormularioDePago() {
         carritoSteps.iniciarCheckout();
-
     }
 }

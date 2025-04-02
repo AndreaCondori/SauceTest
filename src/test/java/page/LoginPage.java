@@ -5,8 +5,6 @@ import core.DriverManager;
 
 public class LoginPage {
     private final Page page;
-
-    // Definir los selectores como constantes
     private final String usernameField = "#user-name";
     private final String passwordField = "#password";
     private final String loginButton = "#login-button";
