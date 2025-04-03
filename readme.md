@@ -36,7 +36,8 @@ Comando para ejecutar las pruebas:
 ## Informe breve sobre la estrategia de automatización y patrones utilizados.
 --
 ```
-Este framework automatiza pruebas en Sauce Demo utilizando Playwright, Cucumber y JUnit, siguiendo el patrón Page Object Model (POM) para mantener un código modular y reutilizable.
+Este framework automatiza pruebas en Sauce Demo utilizando Playwright, Cucumber y JUnit, siguiendo el patrón 
+Page Object Model (POM) para mantener un código modular y reutilizable.
 
 ✅ Patrón: POM, separando lógica de negocio y automatización.
 ✅ Ejecución: Mediante Maven, permitiendo ejecución selectiva con etiquetas (@CompletarCompra).
