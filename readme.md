@@ -2,9 +2,7 @@
 ---
 
 ## Requisitos
-
-Antes de comenzar, asegúrate de tener instalado lo siguiente:
-
+Tener instalado lo siguiente
 - **Java 17**
 - **Maven**
 
@@ -28,7 +26,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
 ## Ejecución de Pruebas
 
-Para ejecutar las pruebas, utiliza el siguiente comando:
+Comando para ejecutar las pruebas:
 
 ```bash
 mvn test
