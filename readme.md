@@ -13,7 +13,7 @@ Tener instalado lo siguiente
 1. Clona el repositorio:
 
     ```bash
-    git clone https://github.com/tuusuario/tu-repositorio.git
+    git clone https://github.com/AndreaCondori/SauceTest.git
     ```
 
 2. Instala las dependencias:
