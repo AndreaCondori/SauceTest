@@ -8,7 +8,7 @@ Este proyecto implementa pruebas automatizadas utilizando **Playwright**, **Cucu
 
 Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
-- **Java 11+**
+- **Java 17**
 - **Maven**
 
 ---
@@ -37,6 +37,14 @@ Para ejecutar las pruebas, utiliza el siguiente comando:
 mvn test
 
 Informe breve sobre la estrategia de automatización y patrones utilizados.
+Este framework automatiza pruebas en Sauce Demo utilizando Playwright, Cucumber y JUnit, siguiendo el patrón Page Object Model (POM) para mantener un código modular y reutilizable.
+
+✅ Enfoque: Pruebas end-to-end con validaciones de UI y datos.
+✅ Patrón: POM, separando lógica de negocio y automatización.
+✅ Ejecución: Mediante Maven, permitiendo ejecución selectiva con etiquetas (@CompletarCompra).
+✅ Gestión del Driver: DriverManager centraliza la configuración de Playwright.
+✅ Reporte: Generación automática en HTML tras la ejecución.
+✅ Mejora: Corrección en la validación de subtotales, evitando errores de conversión.
 La estructura del proyecto es la siguiente:
 SauceTest/
 │── core/               # Configuración del Driver (Playwright)
