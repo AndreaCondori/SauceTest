@@ -27,10 +27,15 @@ public class CheckoutResumenPage {
 
         return productos;
     }
-
-    public String obtenerSubtotal() {
+    public double obtenerSubtotal() {
         Locator subtotalLocator = page.locator(".summary_subtotal_label");
-        return subtotalLocator.textContent().trim();
+        String subtotalTexto = subtotalLocator.textContent().trim();
+        System.out.println("Subtotal obtenido: " + subtotalTexto);
+        return obtenerMonto(subtotalTexto);
+    }
+    public double obtenerMonto(String montoTexto) {
+        String montoLimpio = montoTexto.replaceAll("[^\\d.]", "").trim();
+        return Double.parseDouble(montoLimpio);
     }
     public void navegarAcheckoutResumen(){
         page.locator(btnContinueCheckout).click();

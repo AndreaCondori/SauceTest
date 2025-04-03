@@ -2,6 +2,7 @@ package steps;
 
 import com.microsoft.playwright.Page;
 import io.cucumber.datatable.DataTable;
+import org.junit.Assert;
 import page.CheckoutPage;
 import page.CheckoutResumenPage;
 
@@ -37,13 +38,14 @@ public class CheckoutSteps {
             if (!productosEnPagina.contains(nombreEsperado)) {
                 throw new AssertionError("Producto '" + nombreEsperado + "' no encontrado en el resumen de la compra.");
             }
-    }
+    }}
 
-}
 
-   public boolean validarSubtotal(String subtotal) {
-       if(checkoutResumenPage.obtenerSubtotal().equals(subtotal))return true;
-       return false;
+
+    public void validarSubtotal(String subtotalEsperado) {
+        double esperado = checkoutResumenPage.obtenerMonto(subtotalEsperado);
+        double obtenido = checkoutResumenPage.obtenerSubtotal();
+        Assert.assertEquals("El subtotal no es el esperado", esperado, obtenido, 0.01);
     }
 
     public void confirmarOrden() {

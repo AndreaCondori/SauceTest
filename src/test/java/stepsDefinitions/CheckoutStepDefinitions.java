@@ -7,6 +7,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import steps.CarritoSteps;
 import steps.CheckoutSteps;
 import steps.ProductosSteps;
@@ -46,7 +47,7 @@ public class CheckoutStepDefinitions {
     }
     @Then("debería ver el mensaje de confirmación {string}")
     public void deberiaVerElMensajeDeConfirmacion(String mensaje) {
-        checkoutSteps.validarConfirmaciondeCompra(mensaje);
+       Assert.assertTrue("Error en la confirmación de compra",checkoutSteps.validarConfirmaciondeCompra(mensaje));
     }
 
     @Given("que he agregado los siguientes productos al carrito:")
@@ -72,7 +73,7 @@ public class CheckoutStepDefinitions {
 
     @Then("debería mostrar el siguiente mensaje {string}")
     public void deberiaMostrarElSiguienteMensaje(String msj ) {
-        checkoutSteps.validarMsjErrorFormCheckout(msj);
+        Assert.assertTrue("El mensaje no es el esperado ",checkoutSteps.validarMsjErrorFormCheckout(msj));
     }
 
     @And("entro al formulario de pago")
