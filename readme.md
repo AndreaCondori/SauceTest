@@ -31,9 +31,9 @@ Comando para ejecutar las pruebas:
 ```bash
 mvn test
 
-Informe breve sobre la estrategia de automatización y patrones utilizados.
+## Informe breve sobre la estrategia de automatización y patrones utilizados.
 Este framework automatiza pruebas en Sauce Demo utilizando Playwright, Cucumber y JUnit, siguiendo el patrón Page Object Model (POM) para mantener un código modular y reutilizable.
-
+--
 ✅ Patrón: POM, separando lógica de negocio y automatización.
 ✅ Ejecución: Mediante Maven, permitiendo ejecución selectiva con etiquetas (@CompletarCompra).
 ✅ Gestión del Driver: DriverManager centraliza la configuración de Playwright.
@@ -52,3 +52,4 @@ SauceTest/
 │── README.md           # Instrucciones del proyecto
 
 Las pruebas se ejecutan con Cucumber y están configuradas en la clase RunnerTest
+---
