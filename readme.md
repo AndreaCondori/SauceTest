@@ -1,4 +1,4 @@
-# Proyecto de Pruebas Automatizadas
+# Proyecto de autamtización con Playwright y Cucumber,
 ---
 
 ## Requisitos
